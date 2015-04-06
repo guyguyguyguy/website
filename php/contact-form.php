@@ -67,15 +67,15 @@ if(isset($_POST['email'])) {
 		$mail = new PHPMailer;
 
 		$mail->IsSMTP();                                      // Set mailer to use SMTP
-		$mail->SMTPDebug = 1;                                 // Debug Mode
+		$mail->SMTPDebug = 0;                                 // Debug Mode
 
 		// Step 3 - If you don't receive the email, try to configure the parameters below:
 
-		//$mail->Host = 'mail.yourserver.com';				  // Specify main and backup server
-		//$mail->SMTPAuth = true;                             // Enable SMTP authentication
-		//$mail->Username = 'username';             		  // SMTP username
-		//$mail->Password = 'secret';                         // SMTP password
-		//$mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
+		$mail->Host = 'email-smtp.us-east-1.amazonaws.com';				  // Specify main and backup server
+		$mail->SMTPAuth = true;                             // Enable SMTP authentication
+		$mail->Username = 'AKIAJEOAUHJWXCWJD44Q';             		  // SMTP username
+		$mail->Password = 'AiOqf75gvUuzYUjPNo0MSG1kC9eN9u8yc1RhoNtsOJXx';                         // SMTP password
+		$mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
 
 		$mail->From = $email;
 		$mail->FromName = $_POST['name'];
