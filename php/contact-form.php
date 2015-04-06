@@ -71,8 +71,8 @@ if(isset($_POST['email'])) {
 
 		// Step 3 - If you don't receive the email, try to configure the parameters below:
 
-		$mail->Port = 587; 
-		$mail->Host = 'ssl://email-smtp.us-east-1.amazonaws.com';				  // Specify main and backup server
+		$mail->Port = 443; 
+		$mail->Host = 'email-smtp.us-east-1.amazonaws.com';				  // Specify main and backup server
 		$mail->SMTPAuth = true;                             // Enable SMTP authentication
 		$mail->Username = 'AKIAJEOAUHJWXCWJD44Q';             		  // SMTP username
 		$mail->Password = 'AiOqf75gvUuzYUjPNo0MSG1kC9eN9u8yc1RhoNtsOJXx';                         // SMTP password
