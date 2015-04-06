@@ -67,7 +67,7 @@ if(isset($_POST['email'])) {
 		$mail = new PHPMailer;
 
 		$mail->IsSMTP();                                      // Set mailer to use SMTP
-		$mail->SMTPDebug = 0;                                 // Debug Mode
+		$mail->SMTPDebug = 1;                                 // Debug Mode
 
 		// Step 3 - If you don't receive the email, try to configure the parameters below:
 
