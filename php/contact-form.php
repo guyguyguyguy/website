@@ -89,7 +89,7 @@ if(isset($_POST['email'])) {
 		$mail->From = $email;
 		$mail->FromName = $_POST['name'];
 		$mail->AddAddress($to);								  // Add a recipient
-		$mail->AddReplyTo($email, $name);
+		// $mail->AddReplyTo($email, $name);
 
 		$mail->IsHTML(true);                                  // Set email format to HTML
 
