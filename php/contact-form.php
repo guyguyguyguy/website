@@ -20,8 +20,8 @@ $subject = $_POST['subject'];
 
 if(isset($_POST['email'])) {
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$name = 'Tech'; //$_POST['name'];
+	$email = 'tech@bigabid.com'; //$_POST['email'];
 
 	$fields = array(
 		0 => array(
@@ -35,6 +35,14 @@ if(isset($_POST['email'])) {
 		2 => array(
 			'text' => 'Message',
 			'val' => $_POST['message']
+		),
+		3 => array(
+			'text' => 'Company Name',
+			'val' => $_POST['company']
+		),
+		4 => array(
+			'text' => 'Phone Number',
+			'val' => $_POST['phone']
 		)
 	);
 
