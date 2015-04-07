@@ -14,7 +14,7 @@ header('Content-type: application/json');
 $to = 'amit@bigabid.com';
 
 // Step 2 - Enable if the server requires SMTP authentication. (true/false)
-$enablePHPMailer = false;
+$enablePHPMailer = true;
 
 $subject = $_POST['subject'];
 
@@ -71,11 +71,11 @@ if(isset($_POST['email'])) {
 
 		// Step 3 - If you don't receive the email, try to configure the parameters below:
 
-		$mail->Port = 465; 
+		$mail->Port = 587; 
 		$mail->Host = 'email-smtp.us-east-1.amazonaws.com';				  // Specify main and backup server
 		$mail->SMTPAuth = true;                             // Enable SMTP authentication
-		$mail->Username = 'AKIAJEOAUHJWXCWJD44Q';             		  // SMTP username
-		$mail->Password = 'AiOqf75gvUuzYUjPNo0MSG1kC9eN9u8yc1RhoNtsOJXx';                         // SMTP password
+		$mail->Username = 'AKIAIW3Q3GNJQNCC3C5Q';             		  // SMTP username
+		$mail->Password = 'AkUmEDVxwQ/c0QAGj63qou1XnbZjV+/+HLceH4enea66';                         // SMTP password
 		$mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
 
 		$mail->From = $email;
